@@ -1,0 +1,20 @@
+var result;
+result = 1;
+console.log(result);
+result = "jemima";
+console.log(result);
+result = [2, 3, 2, 3];
+var resul = result.reduce(function (a, b) { return a + b; }, 0);
+console.log(resul);
+var json = '{"latitute":1.23,"longitude":23.5}';
+var ans = JSON.parse(json);
+console.log(ans);
+var res;
+res = 10.7;
+res = res.toFixed();
+console.log(res);
+var add;
+add = function (a, b) {
+    return (a + b);
+};
+console.log(add(22, 78));
