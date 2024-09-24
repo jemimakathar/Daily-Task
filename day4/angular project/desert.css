@@ -1,0 +1,58 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a1969a;
+    overflow-x: hidden;
+}
+.menu-card{
+    border-radius: 10px;
+    background-color: #c9b1b1;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
+    padding:20px;
+    width: 600px;
+    margin: 20px auto;
+}
+.menu-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.menu-header h1{
+    margin:0;
+    font-size: 2em;
+    color: #413;
+}
+.menu-header p{
+    margin: 5px;
+    font-size: 1.2em;
+    color: #666;
+}
+.menu-item{
+    padding: 10px;
+    margin-bottom:20px ;
+}
+.menu-item h2{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #444;
+}
+.menu-item ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+.menu-item li{
+  padding: 5px 0;
+  border-bottom: 1px solid#ddd;
+  display: flex;
+  justify-content: space-between;
+}
+.item-name{
+    font-size: 1em;
+}
+.button{
+    background-color: #e0ae09;
+    padding: 10px 20px;
+    cursor:pointer;
+    border:none;
+    font-size: 16px;
+}
