@@ -3,7 +3,7 @@ function addBinary(a, b) {
     var result = '';
     var carry = 0;
     var i = a.length - 1;
-    var j = b.length - 1;
+    var j = b.length - 1
     while (i >= 0 || j >= 0 || carry) {
         var bitA = i >= 0 ? +a[i] : 0;
         var bitB = j >= 0 ? +b[j] : 0;
