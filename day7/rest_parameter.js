@@ -51,6 +51,6 @@ function areAllTrue() {
     }
     return values.every(function (value) { return value; });
 }
-console.log(areAllTrue(true, true, true)); // Output: true
-console.log(areAllTrue(true, false, true)); // Output: false
-console.log(areAllTrue(false, true)); // Output: true (no values means all are true by default)
+console.log(areAllTrue(true, true, true));
+console.log(areAllTrue(true, false, true));
+console.log(areAllTrue(false, true));
