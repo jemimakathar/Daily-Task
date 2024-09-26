@@ -50,7 +50,6 @@ console.log("---------------------");
 function introduce(name: string = "Guest", age: number = 30): void {
     console.log(`Hello, I'm ${name} and I'm ${age} years old.`);
 }
-
 introduce();                
 introduce("Bob");          
 introduce("Alice", 25);   
