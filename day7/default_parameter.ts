@@ -41,7 +41,7 @@ function getday(year:number=new Date().getFullYear(),month:number)
 }
 console.log(getday(2020,5));
 console.log(getday(undefined,11));
-console.log(getday(2044,15));
+console.log(getday(2044,10));
 console.log("---------------------");
 
 
@@ -54,3 +54,17 @@ introduce();
 introduce("Bob");          
 introduce("Alice", 25);   
 console.log("---------------------");
+
+
+
+function logMessage(message: string, isError: boolean = false): void {
+    if (isError) {
+        console.error(`Error: ${message}`);
+    } else {
+        console.log(`Info: ${message}`);
+    }
+}
+
+logMessage("This is an informational message."); 
+logMessage("This is an error message.", true);  
+

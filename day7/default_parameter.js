@@ -38,4 +38,25 @@ function getday(year, month) {
 }
 console.log(getday(2020, 5));
 console.log(getday(undefined, 11));
-console.log(getday(2044, 15));
+console.log(getday(2044, 10));
+console.log("---------------------");
+function introduce(name, age) {
+    if (name === void 0) { name = "Guest"; }
+    if (age === void 0) { age = 30; }
+    console.log("Hello, I'm ".concat(name, " and I'm ").concat(age, " years old."));
+}
+introduce();
+introduce("Bob");
+introduce("Alice", 25);
+console.log("---------------------");
+function logMessage(message, isError) {
+    if (isError === void 0) { isError = false; }
+    if (isError) {
+        console.error("Error: ".concat(message));
+    }
+    else {
+        console.log("Info: ".concat(message));
+    }
+}
+logMessage("This is an informational message.");
+logMessage("This is an error message.", true);
