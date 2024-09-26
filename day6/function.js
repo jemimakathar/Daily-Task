@@ -2,6 +2,7 @@ function add(a, b) {
     return a + b;
 }
 console.log(add(10, 30));
+
 //implicit 
 var sum = function (x, y) {
     return x + y;

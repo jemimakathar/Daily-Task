@@ -11,15 +11,15 @@ return x+y;
 console.log(sum(90,1))
 
 //explict 
-let Add=(n:number,m:number):number=>
+let Additions=(n:number,m:number):number=>
 {
  return (n+m);
 }
-console.log(Add(25,50));
+console.log(Additions(25,50));
 
 //union
 //function with optional parameters
-let Addition=(n:number,m:number,o?:string|number):number=>
+let Sum=(n:number,m:number,o?:string|number):number=>
     {
         if(typeof o ==="number")
         {
@@ -29,9 +29,9 @@ let Addition=(n:number,m:number,o?:string|number):number=>
         
      return (n+m);
     }
-     console.log(Addition(25,50,"jemi"));
-     console.log(Addition(25,50,12));
-    console.log(Addition(25,50,));//optional ? operator is used.
+     console.log(Sum(25,50,"jemi"));
+     console.log(Sum(25,50,12));
+    console.log(Sum(25,50,));//optional ? operator is used.
 
 
 
@@ -47,6 +47,6 @@ let Addi=(n:number,m:number,o:(string|number)=10):number=>
         console.log(o);
      return (n+m);
     }
-     console.log(Addition(25,50,"jemi"));
-     console.log(Addition(25,50,12));
-    console.log(Addition(25,50,));
+     console.log(Addi(25,50,"jemi"));
+     console.log(Addi(25,50,12));
+    console.log(Addi(25,50,));
