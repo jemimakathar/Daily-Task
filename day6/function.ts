@@ -1,14 +1,14 @@
-function add(a: number, b: number) {
+function addi(a: number, b: number) {
     return a + b;
 }
-console.log(add(10,30));
+console.log(addi(10,30));
 
 //implicit 
-let sum=(x:number,y:number)=>
+let sums=(x:number,y:number)=>
 {
 return x+y;
 }
-console.log(sum(90,1))
+console.log(sums(90,1))
 
 //explict 
 let Additions=(n:number,m:number):number=>
