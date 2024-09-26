@@ -33,11 +33,8 @@ let Sum=(n:number,m:number,o?:string|number):number=>
      console.log(Sum(25,50,12));
     console.log(Sum(25,50,));//optional ? operator is used.
 
-
-
+    
 //functions with default value
-
-
 let Addi=(n:number,m:number,o:(string|number)=10):number=>
     {
         if(typeof o ==="number")
