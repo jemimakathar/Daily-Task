@@ -42,5 +42,16 @@ function getday(year:number=new Date().getFullYear(),month:number)
 console.log(getday(2020,5));
 console.log(getday(undefined,11));
 console.log(getday(2044,15));
+console.log("---------------------");
 
 
+
+
+function introduce(name: string = "Guest", age: number = 30): void {
+    console.log(`Hello, I'm ${name} and I'm ${age} years old.`);
+}
+
+introduce();                
+introduce("Bob");          
+introduce("Alice", 25);   
+console.log("---------------------");
