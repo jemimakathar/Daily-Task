@@ -1,0 +1,1 @@
+export type Employee={name:string,Age:number,address:string};
