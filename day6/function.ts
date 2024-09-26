@@ -33,7 +33,7 @@ let Sum=(n:number,m:number,o?:string|number):number=>
      console.log(Sum(25,50,12));
     console.log(Sum(25,50,));//optional ? operator is used.
 
-    
+
 //functions with default value
 let Addi=(n:number,m:number,o:(string|number)=10):number=>
     {
@@ -47,3 +47,71 @@ let Addi=(n:number,m:number,o:(string|number)=10):number=>
      console.log(Addi(25,50,"jemi"));
      console.log(Addi(25,50,12));
     console.log(Addi(25,50,));
+
+//using map
+console.log("------------");
+const heros=["kavi","jemima","jemi",1]//also give[1,2,3,4]
+heros.map(hero=>//using map we can give any data type  
+    {
+    return 'hero is ${hero}'
+    }
+)
+console.log(heros);
+
+
+
+console.log("------------");
+function getValue(myval:number):boolean|any{
+    if(myval>5){
+        return true
+    }
+    return "ok"
+}
+console.log(getValue(10));
+console.log("------------");
+
+//1.named function
+// function- zero parameter
+function info(){
+    console.log("helloooo");
+}
+info();
+console.log("------------");
+
+//function- parameter and argument passing 
+function add(a:number,b:number){
+    console.log(a+b);
+}
+add(1,2);
+console.log("------------");
+
+
+
+//A function type has two parts: parameters and return type
+function user(username:string):boolean{
+    if(username==="jemi"){
+        return true
+    }
+    else{
+        return false;
+    }
+}
+console.log(user("jemi"));
+console.log("-----------");
+
+
+
+//2.Anonymous function- without function name- storing function in a variable
+let k=function()
+{
+    console.log("jemima");
+}
+k();
+console.log("---------");
+
+
+function echo(message: string): void {
+    console.log(message.toUpperCase());
+}
+echo("JemI");
+
