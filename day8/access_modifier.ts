@@ -8,7 +8,7 @@
 class Student_details{
     public _name:string="divya"
     private _age:number=21
-    protected _isstudent=true
+    protected _isstudent:boolean=true
 
 get _name_retrieve/*getter name*/(){
     return this._name
