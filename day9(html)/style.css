@@ -1,0 +1,19 @@
+table{
+    border-collapse:collapse;     /*stright line varathuku*/
+    margin: auto;
+    width: 50%;
+}
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+h1{
+    text-align:  center;
+}
+ /*li {
+    float: left;   ---horizontal list
+  }*/
+  #list{
+    list-style-type:circle;
+  }
+  
