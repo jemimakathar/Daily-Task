@@ -99,10 +99,12 @@
  <form>
     <label for="fname">First Name:</label>
     <input type="text" placeholder="Enter the First Name" required autofocus><br> <!-- next line -->
-    <label for="lastname">Last Name:</label>
-    <input type="text"placeholder="Enter the last Name" required size="70"><br>
-    <label for="phnumber" >Phone number:</label>
-    <input type="phonenumber"placeholder="Enter the phone number" value="7810083731" readonly><br>
+    <label for="password">Password:</label>
+    <input type="password"placeholder="Enter the password" pattern="(?=.*[A-Z](?=*[\W]).{8})"required ><br>
+    <label for="phnumber" >Telephone number:</label>
+    <input type="phonenumber"placeholder="Enter the phone number" value="7810083731" readonly pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+    <label for="email">Email:</label>
+    <input type="email"placeholder="Enter the email" required pattern=".+@gamil.com"><br>
     <input type="hidden" value="123">   <!-- it is used to hide content from user -->
     <label for="age">age:</label>
     <input type="number" placeholder="Your age" min="18" max="70"><br>
