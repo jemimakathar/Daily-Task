@@ -1,9 +1,6 @@
 //Access Modifer            
 //1.public 2.private 3.protected(executed only with in the class and sub classes)
 
-
-
-
 //getter
 class Student_details{
     public _name:string="divya"
