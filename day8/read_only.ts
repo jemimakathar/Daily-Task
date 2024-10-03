@@ -22,7 +22,7 @@ class Personn {
     }
     // Method to display the person's info
     displayInfo() {
-        console.log(`Name: ${this.name}, Age: ${this.age}`);
+        console.log(`Name: ${this.name}, Age: ${this.age}`);//using constructor we can change the value
     }
 }
 const personn = new Personn("Alice", 30); 
