@@ -24,18 +24,22 @@ var derived_class = /** @class */ (function (_super) {
     function derived_class() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.name = "diya";
+        _this.arr = [1, 2, 3, 4];
+        _this.address = "abcd nagar";
         return _this;
     }
     return derived_class;
 }(abstract_class));
 var c1 = new derived_class();
 console.log(c1.name);
+console.log(c1.arr);
+console.log(c1.address);
 // create a abstract class "animal" and extend that class in the classes named "cat","dog"
 var animal = /** @class */ (function () {
     function animal() {
     }
     animal.prototype.getsound = function () {
-        return "".concat(this.name, "makes the sound");
+        return "".concat(this.name, " makes the sound");
     };
     return animal;
 }());
@@ -46,10 +50,13 @@ var dog = /** @class */ (function (_super) {
         _this.name = "birds";
         _this.age = 90;
         return _this;
-        //the name is the abstract property thus the name must be defined  inside the derived class 
     }
+    dog.prototype.getsounds = function () {
+        return "".concat(this.name, " are beautiful");
+    };
     return dog;
 }(animal));
+//the name is the abstract property thus the name must be defined  inside the derived class 
 var cat = /** @class */ (function (_super) {
     __extends(cat, _super);
     function cat() {
@@ -65,3 +72,4 @@ var c = new cat;
 var d = new dog;
 console.log(c.getsound());
 console.log(d.getsound());
+console.log(d.getsounds());
