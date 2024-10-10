@@ -60,3 +60,30 @@ class Student_Details extends Student implements Student_1, Student_2 {
 let student_object = new Student_Details(); 
 student_object.student1_details(); 
 student_object.student2_details();
+
+
+
+
+
+
+interface Movable {
+    move(): void;
+}
+
+class Vehicle {
+    constructor(public brand: string) {}
+
+    start() {
+        console.log(`${this.brand} is starting`);
+    }
+}
+
+class Car extends Vehicle implements Movable {
+    move() {
+        console.log(`${this.brand} is moving`);
+    }
+}
+
+const myCar = new Car("Toyota");
+myCar.start(); // Output: Toyota is starting
+myCar.move();  // Output: Toyota is moving
