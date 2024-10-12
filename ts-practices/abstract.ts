@@ -1,5 +1,8 @@
 //abstract class is a class that cannot be instantiated directly.
 //abstract class la value kuduka mudiyathu enna instance create panna mudiyathu
+// An abstract class is typically used to define common behaviors for derived classes to extend.
+
+
 abstract class Student
 {
     name:string

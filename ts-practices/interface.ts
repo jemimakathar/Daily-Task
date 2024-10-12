@@ -30,7 +30,7 @@ console.log(details.age);
 
 
 
-//with constructor
+//with constructor   1.initialize properties,use parameter
 interface Person
 {
     name:string;
@@ -48,8 +48,6 @@ class person implements Person
         this.rollno=rollno;
         console.log(`my name ${this.name}`);
     }
-    
-    
 }
 const per=new person("jemi",23,43);
 
@@ -111,7 +109,6 @@ const user: User = {
     age: 30,
     email: "alice@example.com",
 };
-
 printUserDetails(user);
 
 

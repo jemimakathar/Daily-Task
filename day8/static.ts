@@ -1,5 +1,6 @@
 // static cannot be access through instance it can be access with class name
-
+// Class-Level Scope: Static properties belong to the class and are shared by all instances of the class.
+//  You access them using the class name.
 // creating a class and keep the age a static
 
 class Patient_Details{
