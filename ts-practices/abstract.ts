@@ -35,3 +35,23 @@ console.log(stu.phnumber);
 stu.get();
 console.log(st.age);
 
+
+
+abstract class Products
+{
+    Item_name:string="paste";
+    Price:number=99;
+     discount()
+     {
+        console.log("Aadi discount is available");
+     }
+}
+class Product extends Products
+{
+    Amount_Recieved:number=21;
+}
+var product = new Product();
+product.discount();
+console.log(product.Price);
+console.log(product.Amount_Recieved);
+

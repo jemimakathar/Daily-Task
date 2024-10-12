@@ -54,3 +54,26 @@ console.log(stu.name);
 console.log(stu.phnumber);
 stu.get();
 console.log(st.age);
+var Products = /** @class */ (function () {
+    function Products() {
+        this.Item_name = "paste";
+        this.Price = 99;
+    }
+    Products.prototype.discount = function () {
+        console.log("Aadi discount is available");
+    };
+    return Products;
+}());
+var Product = /** @class */ (function (_super) {
+    __extends(Product, _super);
+    function Product() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.Amount_Recieved = 21;
+        return _this;
+    }
+    return Product;
+}(Products));
+var product = new Product();
+product.discount();
+console.log(product.Price);
+console.log(product.Amount_Recieved);
