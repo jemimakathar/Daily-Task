@@ -1,3 +1,7 @@
+//abstract class is a class that cannot be instantiated directly.
+//abstract class la value kuduka mudiyathu enna instance create panna mudiyathu
+// An abstract class is typically used to define common behaviors for derived classes to extend.
+//add additional functionality
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -13,8 +17,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-//abstract class is a class that cannot be instantiated directly.
-//abstract class la value kuduka mudiyathu enna instance create panna mudiyathu
 var Student = /** @class */ (function () {
     function Student() {
     }
@@ -77,3 +79,40 @@ var product = new Product();
 product.discount();
 console.log(product.Price);
 console.log(product.Amount_Recieved);
+var Payment = /** @class */ (function () {
+    function Payment(amount) {
+        this.amount = amount;
+    }
+    Payment.prototype.paymethod = function () {
+        console.log("the Received amount is ".concat(this.amount, " "));
+    };
+    return Payment;
+}());
+var Credit_card_payment = /** @class */ (function (_super) {
+    __extends(Credit_card_payment, _super);
+    function Credit_card_payment(amount, pin_Number) {
+        var _this = _super.call(this, amount) || this;
+        _this.Pin_Number = pin_Number;
+        return _this;
+    }
+    Credit_card_payment.prototype.paymentInfo = function () {
+        console.log("".concat(this.Pin_Number, " payment received successful"));
+    };
+    return Credit_card_payment;
+}(Payment));
+var Payment_card_payment = /** @class */ (function (_super) {
+    __extends(Payment_card_payment, _super);
+    function Payment_card_payment(amount, card_Number) {
+        var _this = _super.call(this, amount) || this;
+        _this.Card_Number = card_Number;
+        return _this;
+    }
+    Payment_card_payment.prototype.paymentInfo = function () {
+        console.log("".concat(this.Card_Number, " payment received successful"));
+    };
+    return Payment_card_payment;
+}(Payment));
+var payment = new Credit_card_payment(50000, '02123');
+var payment_card_payment = new Payment_card_payment(2000, 'two thousand');
+payment.paymentInfo();
+payment_card_payment.paymentInfo();

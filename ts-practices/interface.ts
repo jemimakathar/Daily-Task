@@ -14,6 +14,19 @@
 
 //--optional  --functional --extending --anonymous --indexable --readonly
 
+
+
+// Interface: Used when you want to enforce a certain structure across multiple classes without dictating how the methods should work. 
+//            It's useful for establishing loose coupling between different parts of a system.
+
+
+// Inheritance: Used when there is a clear is-a relationship between classes. 
+//              For example, a Dog is a Mammal, so it makes sense for Dog to inherit common functionality 
+//              (like breathing, eating) from a Mammal class.
+
+
+
+
 interface Details
 {
     name:string;
@@ -163,6 +176,7 @@ interface Car {
 const myCar: Car = {
     brand: "Toyota",
     model: "Corolla",
+   
 };
 
 myCar.model = "Camry";

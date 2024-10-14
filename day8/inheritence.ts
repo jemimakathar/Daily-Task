@@ -1,6 +1,8 @@
 //accessing the parent class property in the derived class
 // the derived class can also have extra methods and properties
 
+//code reusablity,Extensibility,Flexibility
+
 
 class animal{       //parent class
     Name:string;
@@ -51,11 +53,8 @@ class Person {
     }
   }
   class Employee extends Person {
-    constructor(
-        firstName: string,
-        lastName: string,
-        private jobTitle: string)
-         {
+    constructor(firstName: string, lastName: string, private jobTitle: string)
+        {
         super(firstName, lastName);
         }
 

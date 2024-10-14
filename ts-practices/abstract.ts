@@ -59,3 +59,49 @@ product.discount();
 console.log(product.Price);
 console.log(product.Amount_Recieved);
 
+
+
+
+
+abstract class Payment
+{
+    constructor(public amount:number)
+    {
+
+    }
+    abstract paymentInfo():void;
+    paymethod()
+    {
+     console.log(`the Received amount is ${this.amount} `);
+    }
+}
+class Credit_card_payment extends Payment
+{
+    Pin_Number:string;
+    constructor(amount:number,pin_Number:string){
+        super(amount);
+        this.Pin_Number=pin_Number;
+    }
+    paymentInfo(): void {
+        console.log(`${this.Pin_Number} payment received successful`); 
+    }
+    
+}
+class Payment_card_payment extends Payment
+{
+    Card_Number:string;
+    constructor(amount:number,card_Number:string){
+        super(amount);
+        this.Card_Number=card_Number;
+    }
+    paymentInfo(): void {
+        console.log(`${this.Card_Number} payment received successful`); 
+    }
+}
+var payment = new Credit_card_payment(50000,'02123');
+var payment_card_payment =new Payment_card_payment (2000,'two thousand');
+payment.paymentInfo();
+payment_card_payment.paymentInfo();
+
+
+
