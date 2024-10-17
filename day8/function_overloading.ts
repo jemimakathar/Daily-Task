@@ -68,3 +68,5 @@ console.log(getLength("Hello, World!"));
 console.log(getLength([1, 2, 3, 4, 5])); 
 console.log(getLength({ length: 10 }));// Output: 10 (length property of an object)
                                        //print the given value 
+                                       // Product class with overloading for searching by ID, name, or category
+
